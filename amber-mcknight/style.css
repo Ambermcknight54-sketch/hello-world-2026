@@ -12,26 +12,24 @@ main {
   width: 100%;
 }
 
-/* 1. The Container: Stretches across the page and aligns items in a flexible row */
 .picture {
   display: flex;
   flex-direction: row;
-  gap: 15px; /* Clean spacing between the photos */
-  width: 90%; /* Takes up 90% of the screen width */
-  max-width: 1000px; /* Prevents the row from getting absurdly giant on large monitors */
-  margin: 20px auto; /* Centers the entire gallery row on the page */
+  gap: 15px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
-/* 2. The Images: Forces them to share row space equally and constraints their size */
 .picture img {
-  flex: 1; /* Forces all three images to take up an equal share of the row */
-  min-width: 0; /* Vital fix: allows images to shrink small on mobile screens */
-  max-height: 300px; /* Keeps the height perfectly under control so they don't get too tall */
-  object-fit: cover; /* If images have different original sizes, this keeps them uniform without distorting */
-  width: 100%; /* Adjusts width relative to its flex slice */
-  height: auto; /* Maintains aspect ratio */
+  flex: 1;
+  min-width: 0;
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
   display: block;
-  border-radius: 8px; /* Optional: gives the images nice, clean, slightly rounded corners */
+  border-radius: 8px;
 }
 
 a {
@@ -42,7 +40,7 @@ ul {
   width: max-content;
   margin-left: auto;
   margin-right: auto;
-  list-style: none; /* Removes the default bullet points for a cleaner look */
+  list-style: none;
   padding: 0;
 }
 
@@ -54,7 +52,6 @@ p {
 
 h1,
 h2 {
-  /* Centers both your headings */
   text-align: center;
   color: blue;
 }
